@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <style>
+        button{
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid;
+        }
+        #a{
+            text-decoration: none;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input{
+            border: 2px solid;
+        }
+    </style>
 </head>
-<body style="background-image: linear-gradient();">
+<body>
     <h3 style="text-align: center;"><b>welcome student! kindly verified yourself by login form to continue</b></h3>
     <span>
     <figure>
@@ -14,22 +30,23 @@
             <h3 style="text-align: center;"><img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" alt="login" height=120px width=200px></h3>
             <h3><u>SIGN IN</u></h3>
             <div>
-            <span>
-            <form action="./time table.html">
+          
+            <form action="./acessfile.html">
                 user name/email <input type="text" name="myname" id="name" placeholder="enter user name" required>
                 <br><br>
                 password <input type="password" required>
-                <span> &#160 &#160 &#160 &#160<a href="">forgot password</a></span>
+                <span> &#160 &#160 &#160 &#160<a href="./forgetpassword.html" target="_blank">forgot password</a></span>
                 <br>
                 <br>
                 remember me <input type="checkbox">
                 <span>&#160 &#160 &#160 </span>
-                <br>
-                <input type="submit" value="Login"  style="background-color: blueviolet;" required>
+                <br><br><br>
+                <nav>
+                <input type="submit">
                 <span>&#160 &#160 &#160</span>
                 <input type="reset" value="Reset">
-            </form>
-                </span>
+                </nav>
+                </form>
             </div>
         </fieldset>
     </figure>
