@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="icon" href="/assignment/—Pngtree—correct icon_4602219.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        i{
+            color: #c8221f;
+        }
+        input{
+            height: 30px;
+            border: 3px solid black;
+            border-radius: 3px;
+            background-color: rgb(216, 112, 147);
+        }
+        button{
+            height: 37px;
+            border: 3px solid black;
+            border-radius: 3px;
+            background-color: rgb(7, 190, 160);
+
+        }
+        #div{
+            text-align: center;
+            text-decoration: dotted;
+            background-color: rgb(87, 26, 173);
+        }
+        ol{
+            background-color: rgb(228, 158, 68);
+        }
+        body{
+            background-color:rgb(11, 235, 235)
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div"><h2>To-Do-List</h2></div>
+
+    <div>
+            <input type="text" id="task" placeholder="add task">
+            <button onclick="add()">Add</button>
+            <ol id="ol" type="1"></ol>
+
+    </div>
+    <script>
+        function add(){
+
+        var input=document.getElementById("task").value;
+
+        if(input=="")
+        {
+            alert("please enter task");
+        }
+        else{
+            var li=document.createElement('li');
+            var i=document.createElement('i');
+            var span=document.createElement('span');
+            span.innerHTML="<b>"+"&#160 &#160 &#160 &#160 &#160 &#160 delet:"+"</b>";
+            i.className="fa-sharp fa-solid fa-trash fa-xs";
+            li.innerText=input;
+            li.append(span,i);
+           document.getElementById("ol").append(li);
+           var close=document.getElementsByTagName("i");
+            var num;
+            document.getElementById("task").value="";
+            for(num=0;num<close.length;num++)
+            {
+                close[num].addEventListener("click",remove);
+            }
+        }
+    }
+    function remove()
+    {
+        let text="are you sure";
+        if(confirm(text)==true)
+        {
+       // this.remove();
+        this.parentElement.remove();
+        }
+
+    }
+
+    </script>
+    
+</body>
+</html>
