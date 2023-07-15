@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> scientific calculator</title>
+    <link rel="icon" href="/assignment/—Pngtree—correct icon_4602219.png">
+    <style>
+        #div{
+            height: 500px;
+            
+            text-align: center;
+            background-image:url('https://static.vecteezy.com/system/resources/previews/000/113/753/original/vector-3d-colorful-math-symbols.jpg') ;
+        }
+        #thead{
+            height: 30px;
+            width: 100px;
+            border: 3px solid rgb(15, 212, 84);
+            background-color: rgba(224, 37, 196, 0.267);
+        }
+        table{
+            margin: auto;
+            height: 350px;
+            width: 300px;
+            border-radius: 3px rgb(110, 220, 26);
+            transition: 1s;
+            transition-duration: 1s;
+            transition-delay: 1s;
+
+        }
+        td{
+            height: 20px;
+            width: 60px;
+            background-color: rgb(19, 209, 209);
+        }
+        input{
+            height: 60px;
+            width: 300px;
+            color: rgb(127, 238, 8);
+            background-color: rgb(0, 0, 0);
+            font-size: small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        button{
+            height: 20px;
+            width: 60px;
+            border-radius: 4px black;
+        }
+        button:hover{
+            background-color: rgb(219, 219, 32);
+
+        }
+        summary{
+            background-color: rgb(213, 131, 25);
+        }
+        #div1{
+            background-color: rgb(35, 255, 255);
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+
+    <h2>Scentific Calculator</h2>
+    </div>
+    <div id="div">
+        <table border="2">
+            <tr>
+                <th colspan="4" id="thead">
+                    <input type="text"  id="screen">
+                </th>
+            </tr>
+            <tr>
+                <td><button onclick="add('v1')" class="cal">(</button></td>
+                <td><button onclick="add('v2')" class="cal">)</button></td>
+                <td><button onclick="calculation('x^y')" class="cal" > x<sup>y</sup> </button></td>
+                <td><button onclick="calculation('%')" class="cal" >%</button></td>
+            </tr>
+            <tr>
+                <td><button   onclick="calculation('7')" class="cal">7</button></td>
+                <td><button onclick="calculation('8')"  class="cal">8</button></td>
+                <td><button onclick="calculation('9')" class="cal" >9</button></td>
+                <td><button onclick="calculation('*')" class="cal" >X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculation('4')" class="cal" >4</button></td>
+                <td><button onclick="calculation('5')" class="cal" >5</button></td>
+                <td><button onclick="calculation('6')" class="cal" >6</button></td>
+                <td><button onclick="calculation('-')" class="cal" >-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculation('1')" class="cal" >1</button></td>
+                <td><button onclick="calculation('2')" class="cal" >2</button></td>
+                <td><button onclick="calculation('3')" class="cal" >3</button></td>
+                <td><button onclick="calculation('+')"  class="cal">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculation('0')" class="cal" >0</button></td>
+                <td><button onclick="calculation('.')" class="cal" >.</button></td>
+                <td><button onclick="calculation('s')" class="cal">sq root</button></td>
+                <td><button onclick="calculation('/')" class="cal" >/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="delet()"  class="cal"> <-- </button></td>
+                <td><button onclick="result()"  class="cal">=</button></td>
+                <td colspan="2"><button onclick="calculation('c')" class="cal">Clear</button></td>
+            </tr>
+        </table>
+        <br>
+
+        <details>
+            <summary>
+                Operations details:
+            </summary>
+            <img src="https://www.sproutbrite.com/cdn/shop/products/math-basic-terms-for-addition-subtraction-multiplication-division-math-sproutbrite-767262.jpg?v=1646787867" alt="nam" height="200px" width="300px">
+     </div>
+     <script src="./calculator.js"></script>   
+</body>
+</html>

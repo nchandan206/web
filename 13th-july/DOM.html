@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOm</title>
+    <style>
+        #div1{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <br>
+    <!-- user:<input type="text" onkeypress="show()" onkeyup="stop()"><br><br>
+    <p id="in2"></p> -->
+    <!-- <button   type="submit"  ondblclick="required()" >send</button> -->
+    <!-- password <input type="password" id="pass">
+        <input type="button" value="show" id="btn" onclick="hide()"> -->
+        user:<input type="text" onkeypress="show()" id="id1"><br><br>
+        <p id="in2"></p>
+
+    <script>
+     
+        // function change()
+        // {
+        //     document.getElementById("div1").style.backgroundColor="red";
+        // }
+        // function required()
+        // {
+        //     var a=document.getElementById("in2").value;
+        //     if(a=="")
+        //     {
+        //         alert("fill user name");
+        //     }
+        // }
+        // function show(){
+        //     document.getElementById("in2").innerHTML="typing..";
+        // }
+        // function stop(){
+        //     document.getElementById("in2").innerHTML="";
+        // }
+        // function hide()
+        // {
+        //     var btn=document.getElementById("btn");
+        //     var pass=document.getElementById("pass");
+        //     if(btn.value=="show")
+        //     {
+        //         pass.type="text";
+        //         btn.value="hide";
+        //     }
+        //     else{
+        //         pass.type="password";
+        //         btn.value="show";
+        //     }
+
+        // }
+
+        function show(){
+            var a=document.getElementById.innerHTML("id1")=event.keyCode;
+        
+            if(a>=48 && a<=57)
+            {
+                alert("number");
+            }
+            else if((a>=65 && a<=90) || (a>=97 &&a<=122)){
+                alert("alphabet");
+            }
+            else{
+                alert("others");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
