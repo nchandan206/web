@@ -20,7 +20,7 @@ function display(data)
         {
             alert("we can use it");
         }
-        el.textContent=`name: ${item.name},email: ${item.email},id: ${item.id}`;
+        el.textContent=`name: ${item.name},email: ${item.email},id: ${item.password}`;
         container.appendChild(el);
     })
 }

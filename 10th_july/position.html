@@ -3,9 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>position</title>
+    <title>box</title>
+    <style>
+        body{
+            overflow: scroll;
+        
+        }
+
+     
+
+        * {
+             box-sizing: border-box; 
+        }
+
+        button{
+            height: 30px;
+            width:50px;
+        }
+        .container{
+            margin-top:15px ;
+            border: 2px solid;
+            /* overflow: scroll; */
+
+
+        }
+
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px solid;
+            /* margin-top: 10px; */
+            padding: 30px;
+            /* float: left;
+            margin-left: 10px; */
+            display: inline-block;
+        }
+        #box4{
+            /* default position: */
+             /* position: static; */
+
+             /* absolute:relative to the position of first parent  not leave a gap*/
+            /* position: absolute;*/
+             
+            /* position: absolute;
+            left: 2px; */
+
+
+             /* relative:relative to its normal position and will leave  a gap*/
+             /* position: relative;
+             top: 10px;
+             left:12px; */
+
+            /* it fixed the position of item and after scrolling it will remain in  the same position it will basically use in chat section; */
+             position: fixed;
+             bottom: 4px;
+
+
+            /* sticky:chipak  jata he and top,left...property not work*/
+             /* position: sticky;
+            background-color: rgb(5, 83, 83);  */
+            
+        }
+        /* #box4:hover{
+            transition: 2s;
+            transition-duration:2s;
+            transition-delay: 1ms;
+            height: 120px;
+            width: 120px;
+            background-color: rgb(219, 84, 0);
+        } */
+        #box1:hover,#box4:hover{
+            transition: 2s;
+            transition-duration:2s;
+            transition-delay: 1ms;
+            height: 120px;
+            width: 120px;
+            background-color: rgb(219, 219, 0);
+        }
+      
+
+    </style>
 </head>
 <body>
+
+    <div class="container">
+        <div class="item" id="box1">
+        <button>log</button>
+        </div>
+    
+        <div class="item" id="box2">
+        <button>log</button>
+        </div>
+        
+        <div class="item" id="box3">
+        <button>log</button>
+        </div>
+        
+        <div class="item" id="box4">
+        <button>log</button>
+        </div>
+         
+    </div>
+
+    <pre>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Quam nesciunt expedita est o
+        bcaecati possimus vitae vero natus, facilis repudiandae blanditiis magnam nobis repellendus, sed porro alias ipsum nostrum, dolorum temporibus.</pre>
+    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente reprehenderit obcaecati 
+        dolorem commodi. Corrupti vitae, exercitationem dicta e
+        nim magni tempora veniam nam iure quam alias, culpa ea, nobis nostrum error nesciunt earum? Atque aliquam iusto fugiat a optio explicabo odio quo assumenda est, facere cumque cupiditate tempore itaque numquam perferendis animi. Labore aliquid doloribus rerum laborum qui velit nulla laboriosam ducimus fuga. Atque, iusto provident earum similique pariatur impedit voluptatem recusandae eaque quaerat blanditiis. 
+        Similique officiis sunt quas molestiae, quod fuga ut ipsa alias pariatur velit. Ad
+         dolorem voluptatem ipsum reprehenderit iure, soluta laboriosam est fugiat a fuga iusto
+          libero adipisci cupiditate expedita consequuntur quos dicta optio in laborum facilis delectus c
+          ommodi? Qui sunt dolores animi maiores velit dicta.</pre>
+          <pre>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Quam nesciunt expedita est o
+            bcaecati possimus vitae vero natus, facilis repudiandae blanditiis magnam nobis repellendus, sed porro alias ipsum nostrum, dolorum temporibus.</pre>
+        <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente reprehenderit obcaecati 
+            dolorem commodi. Corrupti vitae, exercitationem dicta e
+            nim magni tempora veniam nam iure quam alias, culpa ea, nobis nostrum error nesciunt earum? Atque aliquam iusto fugiat a optio explicabo odio quo assumenda est, facere cumque cupiditate tempore itaque numquam perferendis animi. Labore aliquid doloribus rerum laborum qui velit nulla laboriosam ducimus fuga. Atque, iusto provident earum similique pariatur impedit voluptatem recusandae eaque quaerat blanditiis. 
+            Similique officiis sunt quas molestiae, quod fuga ut ipsa alias pariatur velit. Ad
+             dolorem voluptatem ipsum reprehenderit iure, soluta laboriosam est fugiat a fuga iusto
+              libero adipisci cupiditate expedita consequuntur quos dicta optio in laborum facilis delectus c
+              ommodi? Qui sunt dolores animi maiores velit dicta.</pre>
+
+              <pre>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Quam nesciunt expedita est o
+                bcaecati possimus vitae vero natus, facilis repudiandae blanditiis magnam nobis repellendus, sed porro alias ipsum nostrum, dolorum temporibus.</pre>
+            <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente reprehenderit obcaecati 
+                dolorem commodi. Corrupti vitae, exercitationem dicta e
+                nim magni tempora veniam nam iure quam alias, culpa ea, nobis nostrum error nesciunt earum? Atque aliquam iusto fugiat a optio explicabo odio quo assumenda est, facere cumque cupiditate tempore itaque numquam perferendis animi. Labore aliquid doloribus rerum laborum qui velit nulla laboriosam ducimus fuga. Atque, iusto provident earum similique pariatur impedit voluptatem recusandae eaque quaerat blanditiis. 
+                Similique officiis sunt quas molestiae, quod fuga ut ipsa alias pariatur velit. Ad
+                 dolorem voluptatem ipsum reprehenderit iure, soluta laboriosam est fugiat a fuga iusto
+                  libero adipisci cupiditate expedita consequuntur quos dicta optio in laborum facilis delectus c
+                  ommodi? Qui sunt dolores animi maiores velit dicta.</pre>
+
+                  <pre>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Quam nesciunt expedita est o
+                    bcaecati possimus vitae vero natus, facilis repudiandae blanditiis magnam nobis repellendus, sed porro alias ipsum nostrum, dolorum temporibus.</pre>
+                <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente reprehenderit obcaecati 
+                    dolorem commodi. Corrupti vitae, exercitationem dicta e
+                    nim magni tempora veniam nam iure quam alias, culpa ea, nobis nostrum error nesciunt earum? Atque aliquam iusto fugiat a optio explicabo odio quo assumenda est, facere cumque cupiditate tempore itaque numquam perferendis animi. Labore aliquid doloribus rerum laborum qui velit nulla laboriosam ducimus fuga. Atque, iusto provident earum similique pariatur impedit voluptatem recusandae eaque quaerat blanditiis. 
+                    Similique officiis sunt quas molestiae, quod fuga ut ipsa alias pariatur velit. Ad
+                     dolorem voluptatem ipsum reprehenderit iure, soluta laboriosam est fugiat a fuga iusto
+                      libero adipisci cupiditate expedita consequuntur quos dicta optio in laborum facilis delectus c
+                      ommodi? Qui sunt dolores animi maiores velit dicta.</pre>
+            
+
     
 </body>
 </html>
