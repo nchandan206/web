@@ -1,8 +1,9 @@
 error.log
+*.json
+*.log
+.json
+18th-july/node_modules
+17th-july/node_modules
 
-db.json
-17th-july/db.json
-18th-july/db.json
-17th-july/
-18th-july/
+
 

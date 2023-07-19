@@ -36,8 +36,19 @@
             width:50px;
         }
         .container{
-            margin-top:15px ;
-            border: 2px solid;
+
+            display: flex;
+            /* default value of flex-direction is row and no wrap */
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            /* wrap use in the webpage responsiveness */
+            /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse; */
+            flex-flow:row wrap ;
+            /* align the items in the middle and same sapce between them */
+            justify-content: center;
+            justify-content: space-between;
 
 
         }
@@ -46,28 +57,37 @@
             height: 100px;
             width: 100px;
             background-color: aquamarine;
-            border: 2px solid;
+            border: 1px solid;
             /* margin-top: 10px; */
             padding: 30px;
+            margin-top:15px ;
+            margin-left:15px ;
             /* float: left;
             margin-left: 10px; */
-            display: inline-block;
+            /* display: inline-block; */
         }
-        #box4{
+        /* #box2{
+            /* position: relative;
+            top: 10px;
+            left: 15px;
+            z-index: 40px;provide a order when two box overlap morezindex more prioority 
+        } */
+
+        #box3{
             /* default position: */
              /* position: static; */
 
              /* absolute:relative to the position of first parent  not leave a gap*/
             /* position: absolute;*/
              
-            position: absolute;
-            left: 2px;
+            /* position: absolute;
+            left: 2px; */
 
 
              /* relative:relative to its normal position and will leave  a gap*/
              /* position: relative;
              top: 10px;
-             left:12px; */
+             z-index: 20px; */
 
             /* it fixed the position of item and after scrolling it will remain in  the same position it will basically use in chat section; */
              /* position: fixed;
@@ -75,10 +95,14 @@
 
 
             /* sticky:chipak  jata he and top,left...property not work*/
-             /* position: sticky;
+             position: sticky;
             top: 10000x;
             background-color: azure; 
-             */
+            
+
+
+             /* display: none; */
+              /* visibility: hidden; /*+it will reserve the place */
         }
         /* #box4:hover{
             transition: 2s;
@@ -104,19 +128,26 @@
 
     <div class="container">
         <div class="item" id="box1">
-        <button>log</button>
+        <button>box1</button>
         </div>
     
         <div class="item" id="box2">
-        <button>log</button>
+        <button>box2</button>
         </div>
         
         <div class="item" id="box3">
-        <button>log</button>
+        <button>box3</button>
         </div>
         
         <div class="item" id="box4">
-        <button>log</button>
+        <button>box4</button>
+        </div>
+        <div class="item" id="box5">
+            <button>box5</button>
+        </div>
+            
+        <div class="item" id="box6">
+            <button>box6</button>
         </div>
          
     </div>
