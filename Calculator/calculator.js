@@ -2,13 +2,23 @@
 var p=document.getElementById("screen");
 var val="";
 function calculation(a){
-if(a!='c' && a!='s' &&a!='x^y')
+if(a!='c' && a!='s' &&a!='^' && a!='v1' && a!='v2')
 {
     val=val+a;
     p.value=val;
 
 }
-if(a=='x^y')
+if(a=='v1')
+  {
+  val=val+'(';
+  p.value=val;
+  }
+if(a=='v2') {
+  val=val+')';
+  p.value=val;
+  }
+
+if(a=='^')
 {
     val=val+'**';
     p.value=val;
@@ -27,9 +37,7 @@ if(a=='x^y')
     p.value=s1;
   }
 }
-function clear()
-{
-}
+
 function result()
 {
   var num=eval(p.value);
@@ -47,7 +55,7 @@ function add(a)
   p.value=val;
   }
   else{
-      val=val+')';
+    val=val+')';
   p.value=val;
   }
 }

@@ -21,7 +21,7 @@
         table{
             margin: auto;
             height: 350px;
-            width: 300px;
+            width: 250px;
             border-radius: 3px rgb(110, 220, 26);
             transition: 1s;
             transition-duration: 1s;
@@ -58,6 +58,11 @@
             color: black;
             text-align: center;
         }
+        @media only screen and (max-width:300px) {
+            html{
+                font-size: 100%;
+            }  
+        }
     </style>
 </head>
 <body>
@@ -73,8 +78,8 @@
                 </th>
             </tr>
             <tr>
-                <td><button onclick="add('v1')" class="cal">(</button></td>
-                <td><button onclick="add('v2')" class="cal">)</button></td>
+                <td><button onclick="calculation('v1')" class="cal">(</button></td>
+                <td><button onclick="calculation('v2')" class="cal">)</button></td>
                 <td><button onclick="calculation('^')" class="cal" > x<sup>y</sup> </button></td>
                 <td><button onclick="calculation('%')" class="cal" >%</button></td>
             </tr>
@@ -107,6 +112,9 @@
                 <td><button onclick="result()"  class="cal">=</button></td>
                 <td colspan="2"><button onclick="calculation('c')" class="cal">Clear</button></td>
             </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;margin: auto;background-color: rgb(53, 212, 13);">chandan nayak</td>
+            </tr>
         </table>
         <br>
 
@@ -115,7 +123,8 @@
                 Operations details:
             </summary>
             <img src="https://www.sproutbrite.com/cdn/shop/products/math-basic-terms-for-addition-subtraction-multiplication-division-math-sproutbrite-767262.jpg?v=1646787867" alt="nam" height="200px" width="300px">
-     </div>
-     <script src="./calculator.js"></script>   
-   </body>
+     </div>  
+ 
+     <script src="./alternate.js"></script>
+</body>
 </html>
