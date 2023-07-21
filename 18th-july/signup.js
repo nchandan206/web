@@ -56,3 +56,8 @@ fetch(url,{
     console.log(error);
 })
 })
+
+function popup()
+{
+    document.getElementById('pop').style.display="block";
+}

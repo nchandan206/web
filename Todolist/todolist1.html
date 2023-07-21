@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="icon" href="/assignment/—Pngtree—correct icon_4602219.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        i{
+            color: #c8221f;
+        }
+        input{
+            height: 30px;
+            border: 3px solid black;
+            border-radius: 3px;
+            background-color: rgb(216, 112, 147);
+        }
+        button{
+            height: 37px;
+            border: 3px solid black;
+            border-radius: 3px;
+            background-color: rgb(7, 190, 160);
+
+        }
+        #div{
+            text-align: center;
+            text-decoration: dotted;
+            background-color: rgb(87, 26, 173);
+        }
+        ol{
+            background-color: rgb(228, 158, 68);
+        }
+
+        span{
+            background-color: rgb(255, 237, 196);
+        }
+
+        #para{
+            color: #bac81f;
+        }
+        img{
+            height: 200px;
+            width: 100vh;
+        }
+        #image{
+            display: grid;
+            grid-template-columns:auto auto;
+            column-gap: 10px;
+            row-gap: 10px;
+
+        }
+    .dark-mode {
+  background-color: black;
+  color: white;
+}
+    </style>
+
+</head>
+
+<body onload="typing()">
+    <div id="div"><h2>To-Do-List</h2></div>
+
+    <div>
+            <input type="text" id="task" placeholder="add task">
+            <button onclick="add()">Add</button>
+
+    </div>
+    <p id="p">
+
+    </p>
+
+    <div id="para">
+
+    </div>
+    <div id="image">
+
+    </div>
+
+    <button onclick="darkmod()">click</button>
+    <button onclick="add1()">add1</button>
+    <input type="text" id="input1">
+
+    <script src="./todolist.js"></script>
+    
+</body>
+</html>

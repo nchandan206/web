@@ -4,6 +4,7 @@ error.log
 .json
 18th-july/node_modules
 17th-july/node_modules
+**/node_modules
 
 
 

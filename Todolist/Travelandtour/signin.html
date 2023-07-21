@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+ .item{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(166, 13, 156);
+    border: 1px;
+    display: none;
+ }
+ .item1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(209, 218, 47);
+    border: 3px;
+    display: none;
+ }
+ .container{
+  
+display: grid;
+  grid-template-columns:auto auto auto auto;
+  column-gap: 10px;
+  font-size: smaller;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  
+}
+</style>
+</head>
+<body>
+    
+        user name/email <input type="text" name="myname" id="name" placeholder="enter user name" >
+        <br><br>
+        password <input type="password" id="password"><i class="fa-solid fa-eye-slash" onclick="show()" id="i"></i>
+        <br><br><br>
+        remember me <input type="checkbox">
+        <span>&#160 &#160 &#160 </span>
+        <br><br><br>
+        <button onclick="required()">submit</button>
+        <span>&#160 &#160 &#160</span>
+        <input type="reset" value="Reset" class="sub">
+        <input type="datetime-local">
+
+        <input type="file">
+        search<input type="search" id="search">
+            <div class="container" id="box">
+                <div class="item" id="box1">
+               
+                </div>
+            
+              <div class="item" id="box2">
+            
+                </div>
+                
+                <div class="item" id="box3">
+
+                </div>
+                
+                <div class="item" id="box4">
+                </div>
+                 
+            </div>
+            <div class="container" id="box12">
+            <div class="item1" id="box5">
+            </div>
+            <div class="item1" id="box6">
+            </div>
+            </div>
+
+
+        <button onclick="myFunction()">dark</button>
+        <script src="./signin.js"></script>
+    
+</body>
+</html>

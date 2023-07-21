@@ -12,9 +12,9 @@
         }
         input{
             height: 30px;
-            border: 3px solid black;
+            border: 3px solid lightskyblue;
             border-radius: 3px;
-            background-color: rgb(216, 112, 147);
+            background-color: rgb(189, 51, 97);
         }
         button{
             height: 37px;
@@ -32,59 +32,92 @@
             background-color: rgb(228, 158, 68);
         }
         body{
-            background-color:rgb(11, 235, 235)
+         background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-958a1nWgdc1iBAoGZFueeV05hgrCVElAaEzESiJ9w&s') ; 
+         /* filter: blur(100%); */
+         /* filter: brightness(100%); */
 
         }
+        input[type='checkbox']{
+            float: right;
+        }
+
+    .dark-mode {
+  background-color: black;
+  color: white;
+}
     </style>
 
 </head>
 
 <body>
+
+    <input type="checkbox" value="mode" id="checkbox" onclick="ch()">
     <div id="div"><h2>To-Do-List</h2></div>
 
     <div>
             <input type="text" id="task" placeholder="add task">
             <button onclick="add()">Add</button>
             <ol id="ol" type="1"></ol>
+            <button onclick="darkmod()">click</button>
 
     </div>
+
     <script>
-        function add(){
-
-        var input=document.getElementById("task").value;
-
-        if(input=="")
+        function ch()
         {
-            alert("please enter task");
+        const box=document.getElementById('checkbox');
+        if(box.checked==true)
+        {
+            // alert("darkmode");
+            document.body.style.backgroundColor="black";
         }
         else{
-            var li=document.createElement('li');
-            var i=document.createElement('i');
-            var span=document.createElement('span');
-            span.innerHTML="<b>"+"&#160 &#160 &#160 &#160 &#160 &#160 delet:"+"</b>";
-            i.className="fa-sharp fa-solid fa-trash fa-xs";
-            li.innerText=input;
-            li.append(span,i);
-           document.getElementById("ol").append(li);
-           var close=document.getElementsByTagName("i");
-            var num;
-            document.getElementById("task").value="";
-            for(num=0;num<close.length;num++)
-            {
-                close[num].addEventListener("click",remove);
-            }
+            document.body.style.backgroundColor="white";
         }
     }
-    function remove()
-    {
-        let text="are you sure";
-        if(confirm(text)==true)
-        {
-       // this.remove();
-        this.parentElement.remove();
-        }
 
+    function darkmod()
+    {
+        const el=document.body;
+        el.classList.toggle("dark-mode");
     }
+        function add(){
+
+var input=document.getElementById("task").value;
+
+if(input=="")
+{
+    alert("please enter task");
+}
+else{
+    var li=document.createElement('li');
+    var i=document.createElement('i');
+    var span=document.createElement('span');
+    span.innerHTML="<b>"+"&#160 &#160 &#160 &#160 &#160 &#160 delet:"+"</b>";
+    i.className="fa-sharp fa-solid fa-trash fa-xs";
+    li.innerText=input;
+    li.append(span,i);
+   document.getElementById("ol").append(li);
+   var close=document.getElementsByTagName("i");
+    var num;
+    document.getElementById("task").value="";
+    for(num=0;num<close.length;num++)
+    {
+        close[num].addEventListener("click",remove);
+    }
+}
+}
+function remove()
+{
+let text="are you sure";
+if(confirm(text)==true)
+{
+// this.remove();
+this.parentElement.remove();
+}
+
+}
+
 
     </script>
     
